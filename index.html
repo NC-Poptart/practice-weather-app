@@ -4,42 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
     <title>practiceW7</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="text" placeholder="Enter a city" />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
+    <div class="app">
+      <header>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            required
+            class="app-input"
+          />
+          <input type="submit" value="Search" class="app-button" />
+        </form>
+      </header>
 
-    <main>
-      <h1>Paris</h1>
-      <p>
-        Saturday 20:56, moderate rain <br />
-        Humidity: 87%, Wind: 7.2km/h
-      </p>
+      <main>
+        <h1 class="app-city">Paris</h1>
+        <p>
+          <span class="timestamp">Saturday 20:56</span>,
+          <span class="description">Moderate rain</span> <br />
+          Humidity: <strong>87%</strong>, Wind: <strong> 7.2km/h</strong>
+        </p>
 
-      <div>☀️24°C</div>
-    </main>
+        <h2>
+          <div class="app-emoji">☀️</div>
+          <div class="app-temperature">24</div>
+          &deg;C
+        </h2>
+      </main>
 
-    <br />
-    <footer>
-      Website coded by
-      <a href="https://github.com/NC-Poptart" target="_blank">Nsovo Marhanele</a
-      >, & is open-sourced on
-      <a
-        href="https://github.com/NC-Poptart/practice-weather-app"
-        target="_blank"
-        >GitHub</a
-      >
-      & hosted on
-      <a href="https://poptarts-weatherapp.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <br />
+      <footer>
+        Website coded by
+        <a href="https://github.com/NC-Poptart" target="_blank"
+          >Nsovo Marhanele</a
+        >, & is open-sourced on
+        <a
+          href="https://github.com/NC-Poptart/practice-weather-app"
+          target="_blank"
+          >GitHub</a
+        >
+        & hosted on
+        <a href="https://poptarts-weatherapp.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
 
-    <script src="src/index.js"></script>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
