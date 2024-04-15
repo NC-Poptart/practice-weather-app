@@ -17,25 +17,20 @@
   <body>
     <div class="app">
       <header>
-        <form>
+        <form id="search-form">
           <input
-            type="text"
+            type="search"
             placeholder="Enter a city..."
             required
             class="app-input"
-            id="city-input"
+            id="search-form-input"
           />
-          <input
-            type="submit"
-            value="Search"
-            class="app-button"
-            id="app-button"
-          />
+          <input type="submit" value="Search" class="app-button" />
         </form>
       </header>
 
       <main>
-        <h1 class="app-city" id="city-display">Paris</h1>
+        <h1 class="app-city" id="city"></h1>
         <p>
           <span class="timestamp">Saturday 20:56</span>,
           <span class="description">Moderate rain</span> <br />
@@ -44,7 +39,7 @@
 
         <h2>
           <div class="app-emoji">☀️</div>
-          <div class="app-temperature" id="app-temperature">20</div>
+          <div class="app-temperature" id="temperature"></div>
           &deg;C
         </h2>
       </main>
